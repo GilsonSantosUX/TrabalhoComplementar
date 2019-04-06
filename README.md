@@ -18,4 +18,4 @@ Os algoritmos se encontram nos seguintes diretórios:
 
 Sabe-se que os algoritmos são: Selection Sort é **O (n^2)**, Bubble Sort é **O(..)**, Insertion é **O(..)**, Merge é **O(..)** e QuickSort é **O(..)**;
 
-Por fim, __e menos importante__, sou aluno do curso Tecnologo Analise Desenvolvimento de Sistema (TADS) - UFMS.
+Por fim, ~~e menos importante~~, sou aluno do curso Tecnologo Analise Desenvolvimento de Sistema (TADS) - UFMS.
