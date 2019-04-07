@@ -14,15 +14,16 @@ public class Main{
         BubbleSort      bubble      = new BubbleSort();
         Scanner in = new Scanner(System.in);
 
+        //Defina a lista toda vez que passar aq;
+        String[] nomes = {"Maria Clara","Esther","Clara","Marina","Duarte","Gabriela","Rafael","Gabriel","Lourenco","Mauricio","Sarah","Ana Julia","Sabrina","Martim"};
+
+        System.out.println("Lista nao Ordenada de nomes aleatorios!");
+        listaNomes(nomes);
+
         
         int op = 0;
         
         while(op == 0){
-            //Defina a lista toda vez que passar aq;
-            String[] nomes = {"Maria Clara","Esther","Clara","Marina","Duarte","Gabriela","Rafael","Gabriel","Lourenço","Mauricio","Sarah","Ana Julia","Sabrina","Martim"};
-
-            System.out.println("Lista nao Ordenada de nomes aleatorios!");
-            listaNomes(nomes);
 
             System.out.println("Selecine o algoritmo que deseja efetuar a ordenacao!\n"+
                                 "1 - Quick Sort\n"+
@@ -40,42 +41,34 @@ public class Main{
                 case 1:
                     System.out.println("Quick Sort selecionado!");
                     quick.quickSort(nomes,0,nomes.length -1);
-                    listaNomes(nomes);
-                    op = 0;
                 break;
                 case 2:
                     System.out.println("Selection Sort selecionado!");
                     //selection.quickSort(nomes,0,nomes.length -1);
-                    listaNomes(nomes);
-                    op = 0;
                 break;
                 case 3:
                     System.out.println("Merge Sort selecionado!");
                     quick.quickSort(nomes,0,nomes.length -1);
-                    listaNomes(nomes);
-                    op = 0;
                 break;
                 case 4:
                     System.out.println("Insertion Sort selecionado!");
                     quick.quickSort(nomes,0,nomes.length -1);
-                    listaNomes(nomes);
-                    op = 0;
                 break;
                 case 5:
                     System.out.println("Bubble Sort selecionado!");
-                    quick.quickSort(nomes,0,nomes.length -1);
-                    listaNomes(nomes);
-                    op = 0;
+                    bubble.bubbleSort(nomes);
                 break;
                 case 0:
                     op = 1;
                 break;
                 default:
-                    System.out.println("Valor digitado esta fora dos padrões do codigo.");
+                    System.out.println("Valor digitado esta fora dos padroes do codigo.");
                     op = 0;
                 break;
             }
         }
+
+        listaNomes(nomes);
         
     }
 
