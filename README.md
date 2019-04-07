@@ -16,6 +16,6 @@ Os algoritmos se encontram nos seguintes diretórios:
 4. Merge Sort: [src/Merge](https://github.com/GilsonSantoss/TrabalhoComplemetar/src/Merge)
 5. Quick Sort: [src/Quick](https://github.com/GilsonSantoss/TrabalhoComplemetar/src/Quick)
 
-Sabe-se que os algoritmos são: Selection Sort é **O (n^2)**, Bubble Sort é **O(..)**, Insertion é **O(..)**, Merge é **O(..)** e QuickSort é **O(..)**;
+Sabe-se que os algoritmos são: *Selection Sort* é **O (n^2)**, *Bubble Sort* é **O(n^2)**, *Insertion Sort* é **O(n^2)**, *Merge Sort* é **O(n log n)** e *Quick Sort* é **O(n^2)**;
 
 Por fim, ~~e menos importante~~, sou aluno do curso Tecnologo Analise Desenvolvimento de Sistema (TADS) - UFMS.
