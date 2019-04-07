@@ -1,8 +1,7 @@
 package selection;
 public class SelectionSort{
-    
+
     public void seletcionSort(String[] lista){
-        String temp;
         int index;
         for(int i=0; i<lista.length; i++) {
             index = i;

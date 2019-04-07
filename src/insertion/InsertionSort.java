@@ -1,22 +1,22 @@
 package insertion;
 public class InsertionSort{
 
-    public void insertionSort(String[] lista){
-        String temp;
-        int j;
- 
-       for(int i =  1; i < lista.length; i++) { 
-           temp = lista[i]; 
-           j = i- 1; 
-          
-          while(j >= 0 && temp.charAt(0) < lista[j].charAt(0) ) {
+    public void insertionSort(String[] lista,int n){
+        if(n <= 1) return;
     
-                lista[j+1] = lista[j];
-                j = j-1;
-          }
- 
-          lista[j+1] = temp;
-       }
+        insertionSort(lista,n-1);
+        
+        String x = lista[n-1];
+        int j = n-2;
+        
+        while((j >= 0 && lista[j].charAt(0) > x.charAt(0))){
+            lista[j+1] = lista[j];
+            j--;
+        }
+        
+        lista[j+1] = x;
     }
+
+    
     
 }

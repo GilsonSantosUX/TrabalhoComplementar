@@ -14,7 +14,7 @@ public class Main{
         BubbleSort      bubble      = new BubbleSort();
         Scanner in = new Scanner(System.in);
 
-        //Defina a lista toda vez que passar aq;
+        //Lista para teste de caso
         String[] nomes = {"Maria Clara","Esther","Clara","Marina","Duarte","Gabriela","Rafael","Gabriel","Lourenco","Mauricio","Sarah","Ana Julia","Sabrina","Martim"};
 
         System.out.println("Lista nao Ordenada de nomes aleatorios!");
@@ -22,7 +22,6 @@ public class Main{
 
         
         int op = 0;
-        
         while(op == 0){
 
             System.out.println("Selecine o algoritmo que deseja efetuar a ordenacao!\n"+
@@ -36,6 +35,7 @@ public class Main{
             //Seleciona o algoritmo de ordenação
             op = in.nextInt();
             System.out.print("\r\n");
+
             //Executa o algoritmo escolhido
             switch(op){
                 case 1:
@@ -52,7 +52,7 @@ public class Main{
                 break;
                 case 4:
                     System.out.println("Insertion Sort selecionado!");
-                    insertion.insertionSort(nomes);
+                    insertion.insertionSort(nomes,nomes.length);
                 break;
                 case 5:
                     System.out.println("Bubble Sort selecionado!");

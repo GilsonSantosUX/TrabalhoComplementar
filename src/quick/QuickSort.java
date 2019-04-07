@@ -2,12 +2,12 @@ package quick;
 public class QuickSort{
 
     public void  quickSort(String v[], int esquerda, int direita){
-		if(esquerda < direita){
-		  int j = separar(v,esquerda,direita);
-		  quickSort(v,esquerda,j-1);
-		  quickSort(v,j+1,direita);
+			if(esquerda < direita){
+				int j = separar(v,esquerda,direita);
+				quickSort(v,esquerda,j-1);
+				quickSort(v,j+1,direita);
+			}
 		}
-	}
 	
 	private int separar(String[] v,int esq,int dir){
 	  int i = esq+1;
