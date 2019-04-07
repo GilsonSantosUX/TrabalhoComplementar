@@ -32,5 +32,5 @@ public class QuickSort{
 	  String aux = v[i];
 	  v[i] = v[j];
 	  v[j] = aux;
-    }
+	}
 }

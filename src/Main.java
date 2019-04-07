@@ -44,15 +44,15 @@ public class Main{
                 break;
                 case 2:
                     System.out.println("Selection Sort selecionado!");
-                    //selection.quickSort(nomes,0,nomes.length -1);
+                    selection.seletcionSort(nomes);
                 break;
                 case 3:
                     System.out.println("Merge Sort selecionado!");
-                    quick.quickSort(nomes,0,nomes.length -1);
+                    merge.mergeSort(nomes,0,nomes.length -1);
                 break;
                 case 4:
                     System.out.println("Insertion Sort selecionado!");
-                    quick.quickSort(nomes,0,nomes.length -1);
+                    insertion.insertionSort(nomes);
                 break;
                 case 5:
                     System.out.println("Bubble Sort selecionado!");
